@@ -20,7 +20,7 @@ import playlistRouter from './routes/playlist-routes.js';
 
 const HOST = '127.0.0.1';
 const PORT = 5000;
-export const databaseURI = 'mongodb://localhost/metallica-MERN';
+export const databaseURI = process.env.databaseURI || 'mongodb://localhost/metallica-MERN';
 // const databaseURI = 'mongodb://localhost:2700/mongoose-intro
 
 // Creacion del servidor
